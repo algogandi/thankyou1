@@ -24,6 +24,7 @@ class PagesController extends Controller
     function store(Request $request) {
 
         $name = $request->name;
+        //dd($request); for showimg what is inside
 
        return redirect()->route('thanks',['name' => $name ]);
     }

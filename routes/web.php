@@ -22,7 +22,7 @@ Route::get('/about', 'PagesController@about')->name('about');
 Route::get('/login', 'PagesController@login')->name('login');
 Route::get('/register', 'PagesController@register')->name('register');
 Route::get('/contact', 'PagesController@contact')->name('contact');
-Route::post('/contact', 'PagesController@store')->name('contact.store');
+Route::post('/contact', 'PagesController@store')->name('contact.store');  //should be post
 Route::get('/thanks/{name}', 'PagesController@thanks')->name('thanks');
 
 
