@@ -12,6 +12,12 @@ class PagesController extends Controller
     function about() {
         return view('pages.about');
     }
+    function login() {
+        return view('pages.login');
+    }
+    function register() {
+        return view('pages.register');
+    }
     function contact() {
         return view('pages.contact');
     }

@@ -11,14 +11,27 @@
 |
 */
 
+
+
+
+
+
+
 Route::get('/', 'PagesController@home')->name('home');
 Route::get('/about', 'PagesController@about')->name('about');
+Route::get('/login', 'PagesController@login')->name('login');
+Route::get('/register', 'PagesController@register')->name('register');
 Route::get('/contact', 'PagesController@contact')->name('contact');
 Route::post('/contact', 'PagesController@store')->name('contact.store');
 Route::get('/thanks/{name}', 'PagesController@thanks')->name('thanks');
 
 
 
+/*
+Route::get('/register', function () {
+    return view('pages.register');
+})->name('register');
 
-
-
+Route::get('/login', function () {
+    return view('pages.login');
+})->name('login');  */
